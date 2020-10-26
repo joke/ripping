@@ -1,9 +1,8 @@
 #!/bin/zsh
 set -ex
 
-DVD=/dev/sr1
+DVD=/dev/sr0
 MINLENGTH=$((15*60.))
-OUTPATH='/mnt/tvshows/Boston Legal'
 
 local info="$(lsdvd -x $DVD -Ox)"
 cat <<< $info

@@ -1,7 +1,7 @@
 #!/bin/zsh
 set -ex
 
-DVD=/dev/sr1
+DVD=/dev/sr0
 mkdir -p ${OUTPUT:h}
 
 local info="$(lsdvd -x $DVD -Ox | sed 's|Pan&Scan|Pan\&amp;Scan|g')"

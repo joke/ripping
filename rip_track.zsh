@@ -2,7 +2,7 @@
 set -ex
 setopt extendedglob
 
-DVD=/dev/sr1
+DVD=/dev/sr0
 MINLENGTH=$((15*60.))
 # OUTPUT
 mkdir -p ${OUTPUT:h}
